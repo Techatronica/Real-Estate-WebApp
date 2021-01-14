@@ -1,0 +1,376 @@
+﻿* {
+  margin: 0em;
+  padding: 0em;
+  font-size: 100%;
+  border-style: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: helvetica, calibri, sans-serif;
+  background-color: #f6f7fb;
+  color: #273149;
+}
+
+#wrapper {
+  width: 1300px;
+  margin: 20px auto;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav ul {
+  width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 30px;
+  color: #273149;
+  text-decoration: none;
+}
+
+#current {
+  color: #998a0c;
+}
+
+main {
+  width: 1250px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 45%;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+/* p {
+} */
+
+section ul {
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+
+figure {
+  width: 990px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#col1 img,
+iframe {
+  margin-top: 40px;
+}
+
+form {
+  margin-top: 30px;
+  background-color: #eee;
+  padding: 10px 0px 30px 100px;
+}
+
+fieldset {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+fieldset div {
+  display: flex;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-right: 4px;
+  font-weight: normal;
+}
+
+input {
+  border: 1px solid #273149;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+form p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+#name,
+#mobile,
+#email {
+  width: 340px;
+}
+
+#radio {
+  align-items: baseline;
+}
+
+#checkbox {
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+select {
+  margin-top: 12px;
+  margin-bottom: 22px;
+  margin-left: -4px; /* ICK */
+  background-color: transparent;
+}
+
+textarea {
+  font-family: helvetica, calibri, sans-serif;
+  margin-top: 10px;
+  max-width: 340px;
+  min-width: 340px;
+  border: 1px solid #273149;
+}
+
+input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 2px 8px;
+}
+
+footer {
+  width: 620px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: #273149;
+  text-decoration: none;
+}
+
+/* Slideshow container CSS */
+/* sets the size of the container*/
+.slideshow-container {
+  max-width: 1200px;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Fits image to the Slideshow container */
+.carousel_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  /* color: white; */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(180, 162, 162, 0.8); */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  /* z-index: 1; */
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotCenter {
+  text-align: center;
+  padding-top: 20px;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* *End*******************************************************/
+
+/* Auto sliding carousel CSS starts here! ****************** */
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background-color: transparent;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 400ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -60px;
+}
+
+.carousel__button--right {
+  right: -60px;
+}
+
+.carousel_button img {
+  width: 12px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 30, 0, 0.7);
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.carousel__indicator.current-dot {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Auto sliding carousel CSS ends here! *************************** */
+
+/* Main Text Feild CSS */
+
+h1,
+p.center {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}

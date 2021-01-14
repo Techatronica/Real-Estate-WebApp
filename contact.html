@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>INSERT TITLE HERE</title>
+
+    <meta
+      name="author"
+      content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     "
+    />
+
+    <link rel="stylesheet" href="ultimo_real_estate.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img
+          src="images/ultimo_real_estate_logo.png"
+          width="625"
+          height="160"
+          alt="Ultimo Real Estate, Sydney, Australia"
+        />
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="property.html">Property of the Week</a></li>
+          <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="suburb_profile.html">Suburb Profile</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" id="current">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="col1">
+          <h1>Contact</h1>
+
+          <ul>
+            <li><strong>Ultimo Real Estate</strong></li>
+            <li>20 Jones Street</li>
+            <li>ULTIMO NSW 2007</li>
+          </ul>
+
+          <ul>
+            <li><strong>Mob: +61 123 456 789</strong></li>
+            <li>Tel: +612 1234 5678</li>
+            <li>info@ultimorealestate.com.au</li>
+          </ul>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+            width="570"
+            height="500"
+            allowfullscreen=""
+          ></iframe>
+        </section>
+
+        <section>
+          <h1>Property Enquiry</h1>
+          <form id="form" name="form" onSubmit="return validateForm();">
+            <fieldset>
+
+              <h3>Personal Information</h3>
+
+              <label for="name">Name *:</label>
+              <input name="name" id="name" type="text" />
+  
+              <label for="mobile">Mobile *:</label>
+              <input id="mobile" type="tel" />
+  
+              <label for="email">Email *:</label>
+              <input id="email" type="text" />
+  
+              <p>* = required fields</p>
+  
+              <h3>Do you want to Buy or Sell or Rent?</h3>
+                <div id="radio">
+                  <label for="buy"
+                  >Buy: <input type="radio" name="want" id=""
+                /></label>
+                <label for="sell"
+                  >Sell: <input type="radio" name="want" id=""
+                /></label>
+                <label for="rent"
+                  >Rent: <input type="radio" name="want" id=""
+                /></label>
+                </div>
+
+              <h3>What property type/s are you interested in?</h3>
+                <div>
+                  <label for="Unit"
+                  >Unit: <input type="checkbox" name="buy" id=""
+                /></label>
+                <label for="townhouse"
+                  >Townhouse: <input type="checkbox" name="sell" id=""
+                /></label>
+                <label for="house"
+                  >house: <input type="checkbox" name="rent" id=""
+                /></label>
+                </div>
+
+              <h3>How many bedrooms do you require?</h3>
+              <input type="number" name="" id="" />
+              <h3>Comments</h3>
+              <!-- <label for="comments"></label> -->
+              <textarea name="comments" id="Comments" name="comments" cols="30" rows="10"></textarea>
+              <input type="submit" name="submit" value="Submit Enquiry" />
+            </form>
+            </fieldset>
+
+        </section>
+      </main>
+
+      <footer>
+        <ul>
+          <li>&copy; Ultimo Real Estate 20xx</li>
+          <li>
+            <a href="www.facebook.com/UltimoRealEstate"
+              ><img
+                src="images/facebook.png"
+                width="30"
+                height="30"
+                alt="Ultimo Real Estate on Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="www.instagram.com/UltimoRealEstate"
+              ><img
+                src="images/instagram.png"
+                width="30"
+                height="30"
+                alt="Ultimo Real Estate on Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="www.twitter.com/UltimoRealEstate"
+              ><img
+                src="images/twitter.png"
+                width="30"
+                height="30"
+                alt="Ultimo Real Estate on Twitter"
+            /></a>
+          </li>
+          <li><a href="legals.html">Legals</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
